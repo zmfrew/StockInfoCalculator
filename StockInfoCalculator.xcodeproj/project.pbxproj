@@ -12,6 +12,10 @@
 		B692E448212356160011EBF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B692E446212356160011EBF9 /* Main.storyboard */; };
 		B692E44A212356170011EBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B692E449212356170011EBF9 /* Assets.xcassets */; };
 		B692E44D212356170011EBF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B692E44B212356170011EBF9 /* LaunchScreen.storyboard */; };
+		B692E45B212368A30011EBF9 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692E45A212368A30011EBF9 /* Stock.swift */; };
+		B692E45D212369690011EBF9 /* StockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692E45C212369690011EBF9 /* StockController.swift */; };
+		B692E46021236A990011EBF9 /* Double+RoundExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692E45F21236A990011EBF9 /* Double+RoundExtension.swift */; };
+		B692E46221236BEA0011EBF9 /* Int+CommasExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692E46121236BEA0011EBF9 /* Int+CommasExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B692E449212356170011EBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B692E44C212356170011EBF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B692E44E212356170011EBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B692E45A212368A30011EBF9 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		B692E45C212369690011EBF9 /* StockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockController.swift; sourceTree = "<group>"; };
+		B692E45F21236A990011EBF9 /* Double+RoundExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+RoundExtension.swift"; sourceTree = "<group>"; };
+		B692E46121236BEA0011EBF9 /* Int+CommasExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CommasExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 				B692E4562123569D0011EBF9 /* Models */,
 				B692E4552123569B0011EBF9 /* Views */,
 				B692E454212356990011EBF9 /* Controllers */,
+				B692E45E21236A800011EBF9 /* Helpers */,
 				B692E457212356A50011EBF9 /* Resources */,
 			);
 			path = StockInfoCalculator;
@@ -82,6 +91,7 @@
 		B692E4562123569D0011EBF9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B692E45A212368A30011EBF9 /* Stock.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,8 +118,18 @@
 		B692E459212356B40011EBF9 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B692E45C212369690011EBF9 /* StockController.swift */,
 			);
 			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B692E45E21236A800011EBF9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B692E45F21236A990011EBF9 /* Double+RoundExtension.swift */,
+				B692E46121236BEA0011EBF9 /* Int+CommasExtension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B692E46021236A990011EBF9 /* Double+RoundExtension.swift in Sources */,
+				B692E45D212369690011EBF9 /* StockController.swift in Sources */,
 				B692E445212356160011EBF9 /* ViewController.swift in Sources */,
+				B692E46221236BEA0011EBF9 /* Int+CommasExtension.swift in Sources */,
 				B692E443212356160011EBF9 /* AppDelegate.swift in Sources */,
+				B692E45B212368A30011EBF9 /* Stock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKK87S6JNY;
-				INFOPLIST_FILE = StockInfoCalculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StockInfoCalculator/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,7 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKK87S6JNY;
-				INFOPLIST_FILE = StockInfoCalculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StockInfoCalculator/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
