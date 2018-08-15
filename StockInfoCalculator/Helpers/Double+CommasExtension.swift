@@ -1,5 +1,5 @@
 //
-//  IntCommasExtension.swift
+//  Double+CommasExtension.swift
 //  StockInfoCalculator
 //
 //  Created by Zachary Frew on 8/14/18.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension Int {
-//    Add commas to an Int.
+extension Double {
+    //    Add commas to a Double.
     func addCommas() -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currencyAccounting

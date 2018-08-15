@@ -10,21 +10,24 @@ import Foundation
 
 class StockController {
     
+    // MARK: - Singleton
+    static let shared = StockController()
+    
     // MARK: - Methods
-    func calculateEPS(earnings: Double, sharesOutstanding: Int) -> Double {
-        return (earnings / Double(sharesOutstanding)).roundTo(places: 2)
+    func calculateEPS(_ stock: Stock) -> Double {
+        return (stock.earnings / Double(stock.sharesOutstanding)).roundTo(places: 2)
     }
     
-    func calculatePE(price: Double, eps: Double) -> Double {
-        return (price / eps).roundTo(places: 2)
+    func calculatePE(_ stock: Stock) -> Double {
+        return (stock.price / calculateEPS(stock)).roundTo(places: 2)
     }
     
-    func calculateMarketCap(price: Double, sharesOutstanding: Int) -> Double {
-        return (price * Double(sharesOutstanding)).roundTo(places: 2)
+    func calculateMarketCap(_ stock: Stock) -> Double {
+        return (stock.price * Double(stock.sharesOutstanding)).roundTo(places: 2)
     }
     
-    func calculateCurrentRatio(currentAssets: Double, currentLiabilities: Double) -> Double {
-        return currentAssets - currentLiabilities
+    func calculateCurrentRatio(_ stock: Stock) -> Double {
+        return stock.currentAssets - stock.currentLiabilities
     }
     
 }

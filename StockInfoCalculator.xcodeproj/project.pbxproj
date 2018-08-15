@@ -16,6 +16,7 @@
 		B692E45D212369690011EBF9 /* StockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692E45C212369690011EBF9 /* StockController.swift */; };
 		B692E46021236A990011EBF9 /* Double+RoundExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692E45F21236A990011EBF9 /* Double+RoundExtension.swift */; };
 		B692E46221236BEA0011EBF9 /* Int+CommasExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692E46121236BEA0011EBF9 /* Int+CommasExtension.swift */; };
+		B692E4642123C71F0011EBF9 /* Double+CommasExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692E4632123C71F0011EBF9 /* Double+CommasExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B692E45C212369690011EBF9 /* StockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockController.swift; sourceTree = "<group>"; };
 		B692E45F21236A990011EBF9 /* Double+RoundExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+RoundExtension.swift"; sourceTree = "<group>"; };
 		B692E46121236BEA0011EBF9 /* Int+CommasExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CommasExtension.swift"; sourceTree = "<group>"; };
+		B692E4632123C71F0011EBF9 /* Double+CommasExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+CommasExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				B692E45F21236A990011EBF9 /* Double+RoundExtension.swift */,
 				B692E46121236BEA0011EBF9 /* Int+CommasExtension.swift */,
+				B692E4632123C71F0011EBF9 /* Double+CommasExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				B692E445212356160011EBF9 /* ViewController.swift in Sources */,
 				B692E46221236BEA0011EBF9 /* Int+CommasExtension.swift in Sources */,
 				B692E443212356160011EBF9 /* AppDelegate.swift in Sources */,
+				B692E4642123C71F0011EBF9 /* Double+CommasExtension.swift in Sources */,
 				B692E45B212368A30011EBF9 /* Stock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

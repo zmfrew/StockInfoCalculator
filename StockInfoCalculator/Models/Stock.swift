@@ -11,21 +11,23 @@ import Foundation
 class Stock {
     
     // MARK: - Properties
+    let ticker: String
     let price: Double
     let earnings: Double
-    let sharesOutsanding: Int
-    let currentAssets: Int
-    let currentLiabilities: Int
-    let isOverpriced: Bool
+    let sharesOutstanding: Int
+    let currentAssets: Double
+    let currentLiabilities: Double
+    let isGoodPrice: Bool
     
     // MARK: - Methods
-    init(price: Double, earnings: Double, sharesOutstanding: Int, currentAssets: Int, currentLiabilities: Int, isOverpriced: Bool) {
+    init(ticker: String, price: Double, earnings: Double, sharesOutstanding: Int, currentAssets: Double, currentLiabilities: Double) {
+        self.ticker = ticker
         self.price = price
         self.earnings = earnings
-        self.sharesOutsanding = sharesOutstanding
+        self.sharesOutstanding = sharesOutstanding
         self.currentAssets = currentAssets
         self.currentLiabilities = currentLiabilities
-        self.isOverpriced = isOverpriced
+        self.isGoodPrice = (self.price / (self.earnings / Double(self.sharesOutstanding))) >= 30 ? false : true
     }
     
 }
