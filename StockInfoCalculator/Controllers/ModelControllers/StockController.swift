@@ -15,15 +15,15 @@ class StockController {
     
     // MARK: - Methods
     func calculateEPS(_ stock: Stock) -> Double {
-        return (stock.earnings / Double(stock.sharesOutstanding)).roundTo(places: 2)
+        return (stock.earnings / Double(stock.sharesOutstanding)).roundTo(places: 2) / 100
     }
     
     func calculatePE(_ stock: Stock) -> Double {
-        return (stock.price / calculateEPS(stock)).roundTo(places: 2)
+        return (stock.price / calculateEPS(stock)).roundTo(places: 2) / 1000
     }
     
     func calculateMarketCap(_ stock: Stock) -> Double {
-        return (stock.price * Double(stock.sharesOutstanding)).roundTo(places: 2)
+        return (stock.price * Double(stock.sharesOutstanding)).roundTo(places: 2) / 100
     }
     
     func calculateCurrentRatio(_ stock: Stock) -> Double {
