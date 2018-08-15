@@ -146,11 +146,12 @@ class ViewController: UIViewController {
         tickerLabel.backgroundColor = blackColor
         tickerLabel.textColor = greenColor
         tickerLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        tickerLabel.text = "Ticker:"
+        tickerLabel.text = "  Ticker:"
         tickerLabel.clipsToBounds = true
         tickerLabel.layer.cornerRadius = 4
         tickerTextField.borderStyle = UITextBorderStyle.roundedRect
         tickerTextField.keyboardType = .numberPad
+        tickerTextField.textAlignment = .center
         tickerTextField.font = UIFont.systemFont(ofSize: 14)
         tickerTextField.backgroundColor = blackColor
         tickerTextField.textColor = greenColor
@@ -169,12 +170,13 @@ class ViewController: UIViewController {
         priceLabel.backgroundColor = blackColor
         priceLabel.textColor = greenColor
         priceLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        priceLabel.text = "Price:"
+        priceLabel.text = "  Price:"
         priceLabel.clipsToBounds = true
         priceLabel.layer.cornerRadius = 4
         priceTextField.backgroundColor = blackColor
         priceTextField.textColor = greenColor
         priceTextField.borderStyle = UITextBorderStyle.roundedRect
+        priceTextField.textAlignment = .center
         priceTextField.keyboardType = .numberPad
         priceTextField.font = UIFont.systemFont(ofSize: 14)
         priceTextField.attributedPlaceholder = NSAttributedString(string: "Enter stock price...", attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightGray])
@@ -192,10 +194,11 @@ class ViewController: UIViewController {
         earningsLabel.backgroundColor = blackColor
         earningsLabel.textColor = greenColor
         earningsLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        earningsLabel.text = "Earnings:"
+        earningsLabel.text = "  Earnings:"
         earningsLabel.clipsToBounds = true
         earningsLabel.layer.cornerRadius = 4
         earningsTextField.borderStyle = UITextBorderStyle.roundedRect
+        earningsTextField.textAlignment = .center
         earningsTextField.keyboardType = .numberPad
         earningsTextField.font = UIFont.systemFont(ofSize: 14)
         earningsTextField.backgroundColor = blackColor
@@ -215,10 +218,11 @@ class ViewController: UIViewController {
         sharesOutstandingLabel.backgroundColor = blackColor
         sharesOutstandingLabel.textColor = greenColor
         sharesOutstandingLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        sharesOutstandingLabel.text = "Common Stock:"
+        sharesOutstandingLabel.text = "  Common Stock:"
         sharesOutstandingLabel.clipsToBounds = true
         sharesOutstandingLabel.layer.cornerRadius = 4
         sharesOutstandingTextField.borderStyle = UITextBorderStyle.roundedRect
+        sharesOutstandingTextField.textAlignment = .center
         sharesOutstandingTextField.keyboardType = .numberPad
         sharesOutstandingTextField.font = UIFont.systemFont(ofSize: 14)
         sharesOutstandingTextField.backgroundColor = blackColor
@@ -238,10 +242,11 @@ class ViewController: UIViewController {
         currentAssetsLabel.backgroundColor = blackColor
         currentAssetsLabel.textColor = greenColor
         currentAssetsLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        currentAssetsLabel.text = "Current Assets:"
+        currentAssetsLabel.text = "  Current Assets:"
         currentAssetsLabel.clipsToBounds = true
         currentAssetsLabel.layer.cornerRadius = 4
         currentAssetsTextField.borderStyle = UITextBorderStyle.roundedRect
+        currentAssetsTextField.textAlignment = .center
         currentAssetsTextField.keyboardType = .numberPad
         currentAssetsTextField.font = UIFont.systemFont(ofSize: 14)
         currentAssetsTextField.backgroundColor = blackColor
@@ -261,10 +266,11 @@ class ViewController: UIViewController {
         currentLiabilitiesLabel.backgroundColor = blackColor
         currentLiabilitiesLabel.textColor = greenColor
         currentLiabilitiesLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        currentLiabilitiesLabel.text = "Current Liabilities:"
+        currentLiabilitiesLabel.text = "  Current Liabilities:"
         currentLiabilitiesLabel.clipsToBounds = true
         currentLiabilitiesLabel.layer.cornerRadius = 4
         currentLiabilitiesTextField.borderStyle = UITextBorderStyle.roundedRect
+        currentLiabilitiesTextField.textAlignment = .center
         currentLiabilitiesTextField.keyboardType = .numberPad
         currentLiabilitiesTextField.font = UIFont.systemFont(ofSize: 14)
         currentLiabilitiesTextField.backgroundColor = blackColor
@@ -388,6 +394,7 @@ class ViewController: UIViewController {
     func setUpBottomTicker() {
         bottomTickerLabel.textAlignment = .center
         bottomTickerLabel.backgroundColor = blackColor
+        bottomTickerLabel.font = UIFont.boldSystemFont(ofSize: 16)
         bottomTickerLabel.textColor = greenColor
         bottomTickerLabel.clipsToBounds = true
         bottomTickerLabel.layer.cornerRadius = 4
@@ -404,10 +411,12 @@ class ViewController: UIViewController {
         
         priceToEarningsNameLabel.backgroundColor = blackColor
         priceToEarningsNameLabel.textColor = greenColor
-        priceToEarningsNameLabel.text = "Price/Earnings:"
+        priceToEarningsNameLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        priceToEarningsNameLabel.text = "  Price-Earnings:"
         priceToEarningsNameLabel.clipsToBounds = true
         priceToEarningsNameLabel.layer.cornerRadius = 4
         priceToEarningsDisplayLabel.backgroundColor = blackColor
+        priceToEarningsDisplayLabel.textAlignment = .center
         priceToEarningsDisplayLabel.textColor = greenColor
         priceToEarningsDisplayLabel.clipsToBounds = true
         priceToEarningsDisplayLabel.layer.cornerRadius = 4
@@ -425,10 +434,12 @@ class ViewController: UIViewController {
         
         marketCapNameLabel.backgroundColor = blackColor
         marketCapNameLabel.textColor = greenColor
-        marketCapNameLabel.text = "Market Cap:"
+        marketCapNameLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        marketCapNameLabel.text = "  Market Cap:"
         marketCapNameLabel.clipsToBounds = true
         marketCapNameLabel.layer.cornerRadius = 4
         marketCapLabelDisplayLabel.backgroundColor = blackColor
+        marketCapLabelDisplayLabel.textAlignment = .center
         marketCapLabelDisplayLabel.textColor = greenColor
         marketCapLabelDisplayLabel.clipsToBounds = true
         marketCapLabelDisplayLabel.layer.cornerRadius = 4
@@ -445,10 +456,12 @@ class ViewController: UIViewController {
         
         earningsPerShareNameLabel.backgroundColor = blackColor
         earningsPerShareNameLabel.textColor = greenColor
-        earningsPerShareNameLabel.text = "EPS:"
+        earningsPerShareNameLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        earningsPerShareNameLabel.text = "  EPS:"
         earningsPerShareNameLabel.clipsToBounds = true
         earningsPerShareNameLabel.layer.cornerRadius = 4
         earningsPerShareDisplayLabel.backgroundColor = blackColor
+        earningsPerShareDisplayLabel.textAlignment = .center
         earningsPerShareDisplayLabel.textColor = greenColor
         earningsPerShareDisplayLabel.clipsToBounds = true
         earningsPerShareDisplayLabel.layer.cornerRadius = 4
@@ -465,10 +478,12 @@ class ViewController: UIViewController {
         
         currentRatioNameLabel.backgroundColor = blackColor
         currentRatioNameLabel.textColor = greenColor
-        currentRatioNameLabel.text = "Current Ratio:"
+        currentRatioNameLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        currentRatioNameLabel.text = "  Current Ratio:"
         currentRatioNameLabel.clipsToBounds = true
         currentRatioNameLabel.layer.cornerRadius = 4
         currentRatioDisplayLabel.backgroundColor = blackColor
+        currentRatioDisplayLabel.textAlignment = .center
         currentRatioDisplayLabel.textColor = greenColor
         currentRatioDisplayLabel.clipsToBounds = true
         currentRatioDisplayLabel.layer.cornerRadius = 4
